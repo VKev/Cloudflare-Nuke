@@ -43,7 +43,7 @@ func FilterCollection(resources types.Resources, config *config.Config) {
 			}
 		}
 
-		if slices.Contains(config.Zones.Excludes, resource.ResourceName) {
+		if resource.ProductName == "zone" && slices.Contains(config.Zones.Excludes, resource.ResourceName) {
 			resource.State = types.Filtered
 			continue
 		}
