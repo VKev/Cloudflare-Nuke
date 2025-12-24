@@ -5,6 +5,7 @@ zones:
 
 resource-types:
   excludes:
+    # Add CachePurge to skip purge-everything cache clears.
     - SecretsStore
     - Workersscripts
     - KV

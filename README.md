@@ -85,6 +85,8 @@ resource-ids:
       id: 16d30729-f27e-474a-885c-5d285804a7ac
 ```
 
+`CachePurge` represents the purge-everything cache action per zone. Add it to the `resource-types` excludes list if you want to skip cache purges.
+
 ## Caution!
 
 Be aware that *cf-nuke* is a very destructive tool, hence you have to be very
